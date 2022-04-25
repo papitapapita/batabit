@@ -1,0 +1,12 @@
+:root{
+    font-size: 62.5%;
+    --primary-font: 'DM Sans', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+    --light: 300;
+    --normal: 500;
+    --bold: 700;
+}
+
+body{
+    font-size: 1.6rem;
+}
