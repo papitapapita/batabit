@@ -1,0 +1,17 @@
+:root{
+    --big-size: 4rem;
+    --medium-size: 2rem;
+}
+
+.header{
+    min-height: 50vh;
+    padding: 17rem 15rem;
+}
+
+.header__logo{
+    width: 17.4rem;
+}
+
+.header__button{
+    bottom: -190px;
+}
