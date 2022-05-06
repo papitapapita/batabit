@@ -14,7 +14,8 @@
     --grey: #BABABA;
     --off-white: #FAF8F7;
     --just-white: #fff;
-    --big-size: 2.4rem;
+    --larger-size: 2.4rem;
+    --big-size: 1.8rem;
     --medium-size: 1.4rem;
 }
 
@@ -62,7 +63,7 @@ body{
     width: 90%;
     margin: 0 auto 2.4rem;
     font-weight: var(--bold);
-    font-size: var(--big-size);
+    font-size: var(--larger-size);
     color: var(--just-white);
 }
 
@@ -123,7 +124,7 @@ body{
 
 .interchange__title{
     margin-bottom: 3rem;
-    font-size: var(--big-size);
+    font-size: var(--larger-size);
     font-weight: var(--bold);
     color: var(--warm-black);
 }
@@ -134,28 +135,33 @@ body{
     color: var(--grey);
 }
 
-.table-container{
+.tables-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4rem;
+}
+
+.price-table-section{
+    margin: 0 1.6rem;
 }
 
 .table__title{
-    max-width: 24.6rem;
+    width: 24.6rem;
     margin: 0 auto 1.2rem;
-    width: 60%;
     text-align: left;
-    font-size: 1.8rem;
+    font-size: var(--big-size);
     font-weight: var(--bold);
     color: var(--bitcoin-orange);
 }
 
 .table{
     max-width: 30rem;
+    width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(4, 25%);
     justify-content: flex-start;
-    width: 62.5%;
     height: 200px;
     margin: 0 auto 1.6rem;
     background-color: var(--just-white);
@@ -163,6 +169,7 @@ body{
 }
 
 .table__column{
+    font-family: Inter;
     display: flex;
     align-items: center;
     padding: 1rem 1.2rem;
@@ -210,4 +217,78 @@ body{
 
 .table__currency--comisiones{
     background-color: var(--soft-blue);
+}
+
+/*------- BENEFITS -------*/
+
+.benefits{
+    padding: 6.4rem 0 2.4rem;
+    background-color: var(--warm-black);
+}
+
+.benefits__text{
+    text-align: center;
+}
+
+.benefits__text, .benefits-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.benefits__title{
+    margin-bottom: 2.4rem;
+    color: var(--just-white);
+    font-weight: var(--bold);
+    font-size: var(--larger-size);
+}
+
+.benefits__description{
+    color: #808080;
+    font-size: var(--medium-size);
+    margin-bottom: 3.2rem;
+}
+
+.benefit-card{
+    padding: 1.6rem 2rem 2.2rem 1.6rem;
+    border: none;
+    border-radius: .4rem;
+    margin-bottom: 1.6rem;
+    background-color: var(--black);
+}
+
+.benefit-card__icon
+{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1.2rem;
+    background: center/cover no-repeat;
+}
+
+.benefit-card__icon--time{
+    background-image: url("../assets/icons/clock.svg");
+}
+
+.benefit-card__icon--eye{
+    background-image: url("../assets/icons/eye.svg");
+}
+
+.benefit-card__icon--money{
+    background-image: url("../assets/icons/dollar-sign.svg");
+}
+
+.benefit-card__icon--check{
+    background-image: url("../assets/icons/check-circle.svg");
+}
+
+.benefit-card__title{
+    margin-bottom: 1rem;
+    color: var(--just-white);
+    font-size: var(--big-size);
+    font-weight: var(--bold);
+}
+
+.benefit-card__description{
+    color: #808080;
+    font-size: var(--medium-size);
 }
