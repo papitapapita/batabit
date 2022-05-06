@@ -5,7 +5,6 @@
 
 .header{
     min-height: 50vh;
-    padding: 17rem 15rem;
 }
 
 .header__logo{
@@ -13,5 +12,5 @@
 }
 
 .header__button{
-    bottom: -190px;
+    width: 32rem;
 }
