@@ -1,5 +1,6 @@
 :root{
-    --big-size: 4rem;
+    --larger-size: 4rem;
+    --big-size: 2.2rem;
     --medium-size: 2rem;
 }
 
@@ -13,4 +14,17 @@
 
 .header__button{
     width: 32rem;
+}
+
+.benefits-container{
+    padding: 0 5.6rem;
+}
+
+.benefit-card{
+    margin: 0 .8rem 1.6rem;
+}
+
+.benefit-card__icon{
+    width: 3rem;
+    height: 3rem;
 }
