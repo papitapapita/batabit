@@ -5,7 +5,7 @@
 }
 
 .header{
-    min-height: 50vh;
+    height: 50vh;
 }
 
 .header__logo{
@@ -27,4 +27,12 @@
 .benefit-card__icon{
     width: 3rem;
     height: 3rem;
+}
+
+.plan-cards{
+    justify-content: center;
+}
+
+.footer__img{
+    width: 12rem;
 }

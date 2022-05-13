@@ -22,6 +22,7 @@
 html{
     font-size: 62.5%;
     font-family: var(--primary-font);
+    scroll-behavior: smooth;
 }
 
 body{
@@ -42,13 +43,6 @@ body{
     min-width: 28rem;
     min-height: 33.4rem;
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
-    animation: bgAnimateBitcoin 20s ease infinite;
-}
-
-@keyframes bgAnimateBitcoin {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .image-container--logo{
@@ -91,12 +85,15 @@ body{
     font-weight: var(--bold);
 }
 
-.down-arrow--header{
+.down-arrow{
     display: inline-block;
     width: var(--medium-size);
     height: .9rem;
-    margin-left: 1.4rem;
     background: url("../assets/icons/down-arrow.svg") center/cover no-repeat;
+}
+
+.down-arrow--header{
+    margin-left: 1.4rem;
 }
 
 /* ------ INTERCHANGE SECTION ------- */
@@ -298,3 +295,219 @@ body{
     color: #808080;
     font-size: var(--medium-size);
 }
+
+/*------ KNOWIT -----------*/
+
+.knowit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: url("../assets/img/bitcoinbaby2x.jpg") center/cover no-repeat;
+}
+
+.knowit__title{
+    color: var(--just-white);
+    font-size: var(--larger-size);
+    font-weight: var(--bold);
+    text-shadow: .2rem .2rem .9rem #000;
+}
+
+/*--------- PLANS -----------*/
+
+.plans{
+    background-color: var(--off-white);
+    padding: 8.2rem 0 6.7rem;
+}
+
+.plans__text{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plans__title{
+    margin-bottom: 2.4rem;
+    color: var(--warm-black);
+    font-weight: var(--bold);
+    font-size: var(--larger-size);
+}
+
+.plans__description{
+    margin-bottom: 4rem;
+    font-size: var(--medium-size);
+    font-weight: var(--normal);
+    color: #757575;
+}
+
+.plan-cards{
+    display: flex;
+    align-items: center;
+    height: 30rem;
+    margin-bottom: 4.8rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plan-card{
+    scroll-snap-align: center;
+    position: relative;
+    text-align: center;
+    min-width: 23rem;
+    max-width: 23rem;
+    height: 24.7rem;
+    padding: 3.1rem 1.6rem 2.4rem;
+    border: none;
+    border-radius: .8rem;
+    margin:0 1.6rem;
+    box-shadow: 0px 4px 8px 0px #59491E29;
+    background-color: var(--just-white);
+}
+
+.plan-card__title{
+    margin-bottom: .8rem;
+    font-weight: var(--bold);
+    font-size: var(--medium-size);
+}
+
+.plan-card__price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-symbol{
+    font-weight: var(--bold);
+    font-size: 1.2rem;
+    color: var(--grey);
+}
+
+.price{
+    font-weight: var(--bold);
+    font-size: 5.2rem;
+    color: var(--grey);
+}
+
+.plan-card__description{
+    margin-bottom: 1.6rem;
+    color: #757575;
+}
+
+.plan-card__description--recommended{
+    margin-bottom: 1.6rem;
+}
+
+.plan-card__button{
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15.1rem;
+    height: 4.8rem;
+    padding: 1.6rem;
+    border: .2rem solid var(--grey);
+    border-radius: .4rem;
+    color: var(--grey );
+    font-weight: var(--bold);
+    font-size: 1.4rem;
+    background-color: var(--off-white);
+}
+
+.right-arrow{
+    margin-left: .8rem;
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.8rem;
+    background: url("../assets/icons/grey-right-arrow.svg") center/cover no-repeat;
+}
+
+.plan-card__recomendado{
+    position: absolute;
+    top: -1.4rem;
+    left: calc(75% - 11.439rem);
+    display: inline-block;
+    padding: .8rem;
+    color: var(--just-white);
+    background: var(--bitcoin-orange);
+    border-radius: .8rem;
+    font-weight: var(--bold);
+}
+
+.price--recommended, .price-symbol--recommended, .plan-card__button--recommended{
+    color: var(--warm-black);
+}
+
+.plan-card__button--recommended{
+    border-color: var(--bitcoin-orange);
+}
+
+.right-arrow--recommended{
+    background-image: url("../assets/icons/orange-right-arrow.svg");
+}
+
+
+/*--------- QUESTIONS -----------*/
+
+.questions{
+    max-width: 60rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.questions__title{
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.question__description{
+    width: 90%;
+    color: #757575;
+    font-weight: var(--normal);
+    font-size: var(--medium-size);
+}
+
+.down-arrow--question{
+    margin-left: 2.3rem;
+    margin-right: 1rem;
+}
+
+/*---------- FOOTER --------------*/
+
+.footer{
+    padding: 4rem 0;
+    background-color: var(--bitcoin-orange);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 60rem;
+    width: 62%;
+    margin: 0 auto;
+}
+
+.footer__link-item{
+    margin-bottom: .8rem;
+}
+
+.footer__link{
+    color: var(--just-white);
+    font-size: var(--medium-size);
+    font-weight: var(--normal);
+}
+
+.footer__img{
+    width: 8rem;
+}
+
+
